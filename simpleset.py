@@ -1,9 +1,10 @@
+#유틸리티 함수 선언
 from functools import *
 
-def intersect(*ar):
+def intersect(*ar): #*이 있으면 Tuple
     return reduce(__intersectSC,ar)
 
-def __intersectSC(listX, listY):
+def __intersectSC(listX, listY): #__숨김
     setList = []
     for x in listX:
         if x in listY:
