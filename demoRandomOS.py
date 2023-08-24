@@ -32,5 +32,3 @@ result = glob.glob("c:\\work\\*.py")
 
 for item in result:
     print(item)
-
-
